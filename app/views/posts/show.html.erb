@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Useranme:</strong>
+  <%= @post.useranme %>
+</p>
+
+<p>
+  <strong>Passwd:</strong>
+  <%= @post.passwd %>
+</p>
+
+<p>
+  <strong>Lat:</strong>
+  <%= @post.lat %>
+</p>
+
+<p>
+  <strong>Long:</strong>
+  <%= @post.long %>
+</p>
+
+<p>
+  <strong>Img:</strong>
+  <%= @post.img %>
+</p>
+
+<p>
+  <strong>Coments:</strong>
+  <%= @post.coments %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @post.value %>
+</p>
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>
