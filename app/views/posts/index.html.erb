@@ -6,7 +6,7 @@
 <table>
   <thead>
     <tr>
-      <th>Useranme</th>
+      <th>Username</th>
       <th>Passwd</th>
       <th>Lat</th>
       <th>Long</th>
@@ -20,13 +20,13 @@
   <tbody>
     <% @posts.each do |post| %>
       <tr>
-        <td><%= post.useranme %></td>
+        <td><%= post.username %></td>
         <td><%= post.passwd %></td>
         <td><%= post.lat %></td>
         <td><%= post.long %></td>
         <td><%= image_tag "data:image/jpeg;base64,#{post.img}" %></td>
         <td><%= post.coments %></td>
-        <td><%= post.value %></td>
+        <td><%= post.metervalue %></td>
         <td><%= link_to 'Show', post %></td>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
         <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>

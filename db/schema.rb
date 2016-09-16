@@ -10,24 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160915070203) do
+ActiveRecord::Schema.define(version: 20160916082249) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "posts", force: :cascade do |t|
-    t.string   "useranme"
+    t.string   "username"
     t.string   "passwd"
     t.decimal  "lat",        precision: 10, scale: 6
     t.decimal  "long",       precision: 10, scale: 6
     t.string   "img"
     t.string   "coments"
-    t.string   "value"
-    t.datetime "created_at",                          null: false
-    t.datetime "updated_at",                          null: false
+    t.datetime "created_at",                                      null: false
+    t.datetime "updated_at",                                      null: false
     t.datetime "capturedt"
     t.integer  "barcode"
     t.string   "location"
+    t.integer  "metervalue",                          default: 0
   end
 
   create_table "users", force: :cascade do |t|
